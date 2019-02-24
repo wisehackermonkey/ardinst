@@ -1,0 +1,28 @@
+{
+  "name": "ardinst",
+  "version": "1.0.0",
+  "dependencies": {
+    "fs-extra": "latest",
+    "mkdirp": "latest",
+    "rimraf": "latest"
+  },
+  "description": "```\r by oran c\r oranbusiness@gmail.com\r github.com/wisehackermonkey\r 20190224\r ```",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wisehackermonkey/ardinst.git"
+  },
+  "author": "wisehackermonkey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wisehackermonkey/ardinst/issues"
+  },
+  "homepage": "https://github.com/wisehackermonkey/ardinst#readme"
+}

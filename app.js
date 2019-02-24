@@ -11,9 +11,13 @@
 */
 let create = require("./lib/create");
 
+//Create project directory structure
 create.folder("./project/src");
 create.folder("./project/examples");
-create.file("./project/library.properties");
+create.folder("./project/");
 
-//testing cleanup
-create.delete("./project");
+//Generate project template files
+create.file("./project/library.properties");
+create.file("./project/README.md");
+create.file('./project/keywords.txt');
+
