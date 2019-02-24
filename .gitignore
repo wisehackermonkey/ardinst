@@ -1,3 +1,10 @@
+
+#Project specific items
+.idea
+
+# testing folders
+project
+
 # Logs
 logs
 *.log
