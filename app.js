@@ -22,7 +22,8 @@ create.file("./project/README.md");
 create.file('./project/keywords.txt');
 
 
-create.install("arduino-bounce2");
+// create.install("arduino-bounce2");
+create.install("ffi");
 
 //create symlink to arduino folder
 // console.log("Creating symlink");
