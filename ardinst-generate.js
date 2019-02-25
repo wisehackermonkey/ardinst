@@ -8,7 +8,7 @@
 const program = require("commander");
 
 program
-    .option("-f --file","specify template project folder location")
+    .option("-f --file", "specify template project folder location")
     .parse(process.argv);
 
 let folder = program.args;
