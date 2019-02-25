@@ -1,5 +1,6 @@
 # ardinst
 #### ardinst is a package mangaer for ardiuno libaries
+[![npm version](https://badge.fury.io/js/ardinst.svg)](https://badge.fury.io/js/ardinst)pm
 ```
 by oran c
 oranbusiness@gmail.com
