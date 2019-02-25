@@ -24,8 +24,10 @@ console.log(`
 console.log(`Ardinst (arduino install) the arduino package manager`);
 
 program
-    .version('1.0.0')
+    .version('1.0.0', '-v, --version')
     .command('install [name]', 'install one or more packages')
     .command('search [query]', 'search with optional query')
+    .command('generate [query]', 'generate arduino library file project template')
+    //TODO ADD 'ardinst list' returns list of installed packages
     // .command('list', 'list packages installed', {isDefault: true})
     .parse(process.argv);
