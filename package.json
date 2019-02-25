@@ -20,9 +20,19 @@
     "url": "git+https://github.com/wisehackermonkey/ardinst.git"
   },
   "author": "wisehackermonkey",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/wisehackermonkey/ardinst/issues"
   },
-  "homepage": "https://github.com/wisehackermonkey/ardinst#readme"
+  "homepage": "https://github.com/wisehackermonkey/ardinst#readme",
+  "keywords": [
+    "arduino",
+    "ardinst",
+    "package",
+    "manager",
+    "easy",
+    "install",
+    "uno",
+    "arduino-uno"
+  ]
 }
