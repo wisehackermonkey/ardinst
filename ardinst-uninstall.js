@@ -27,6 +27,7 @@ package.forEach(function (package_name) {
         create.uninstall(package_name);
     }catch (e) {
         console.log(`Package "${package_name}" in not installed`);
+        console.log(`did you mean? 'ardinst install ${package_name}`);
         console.log(`ERROR: ${e}`);
     }
 });
