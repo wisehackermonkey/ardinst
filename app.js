@@ -23,22 +23,25 @@ create.file('./project/keywords.txt');
 
 
 let package = "arduino-bounce2";
-create.install(package);
+let child = create.install(package);
 
-//create symlink to arduino folder
-// console.log("Creating symlink");
-try{
-    create.symlik(package);
-}catch (e) {
-    if (e === "library") {
-        console.log(`ERROR: could not create symlink, library '${package} is not installed'`);
-        console.log(`cleaning up aborted install... `);
-        create.uninstall(package);
+//wait for process to finish before continuin
+child.on('exit', function() {
 
+    //create symlink to arduino folder
+    console.log("Creating symlink");
+    try{
+        create.symlik(package);
+    }catch (e) {
+        if (e === "library") {
+            console.log(`ERROR: could not create symlink, library '${package} is not installed'`);
+            console.log(`cleaning up aborted install... `);
+            create.uninstall(package);
+
+        }
     }
-}
 
-
+});
 
 process.on('SIGTERM', () => {
     console.info('SIGTERM signal received.');
