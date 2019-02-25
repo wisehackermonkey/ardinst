@@ -26,6 +26,7 @@ let package = "arduino-bounce2";
 let child = create.install(package);
 
 //wait for process to finish before continuin
+// found from stack overflow https://stackoverflow.com/a/22365830
 child.on('exit', function() {
 
     //create symlink to arduino folder
@@ -43,6 +44,8 @@ child.on('exit', function() {
 
 });
 
+// find more info on Graceful shutdown in NodeJS
+//https://hackernoon.com/graceful-shutdown-in-nodejs-2f8f59d1c357
 process.on('SIGTERM', () => {
     console.info('SIGTERM signal received.');
     process.exit(0);
