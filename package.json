@@ -2,6 +2,7 @@
   "name": "ardinst",
   "version": "1.0.0",
   "dependencies": {
+    "commander": "^2.19.0",
     "fs-extra": "latest",
     "global-prefix": "^3.0.0",
     "live-plugin-manager": "^0.12.0",
@@ -9,7 +10,7 @@
     "rimraf": "latest"
   },
   "description": "```\r by oran c\r oranbusiness@gmail.com\r github.com/wisehackermonkey\r 20190224\r ```",
-  "main": "app.js",
+  "main": "ardinst.js",
   "directories": {
     "lib": "lib"
   },
