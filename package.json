@@ -2,7 +2,6 @@
   "name": "ardinst",
   "version": "1.0.0",
   "dependencies": {
-    "arduino-bounce2": "^1.0.0",
     "fs-extra": "latest",
     "global-prefix": "^3.0.0",
     "live-plugin-manager": "^0.12.0",

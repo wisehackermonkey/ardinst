@@ -22,8 +22,25 @@ create.file("./project/README.md");
 create.file('./project/keywords.txt');
 
 
-create.install("arduino-bounce2");
+let package = "arduino-bounce2";
+create.install(package);
 
 //create symlink to arduino folder
 // console.log("Creating symlink");
-// create.symlik("/test","arduino-bounce2");
+try{
+    create.symlik(package);
+}catch (e) {
+    if (e === "library") {
+        console.log(`ERROR: could not create symlink, library '${package} is not installed'`);
+        console.log(`cleaning up aborted install... `);
+        create.uninstall(package);
+
+    }
+}
+
+
+
+process.on('SIGTERM', () => {
+    console.info('SIGTERM signal received.');
+    process.exit(0);
+});
