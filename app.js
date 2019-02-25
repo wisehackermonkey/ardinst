@@ -21,3 +21,9 @@ create.file("./project/library.properties");
 create.file("./project/README.md");
 create.file('./project/keywords.txt');
 
+
+create.install("arduino-bounce2");
+
+//create symlink to arduino folder
+// console.log("Creating symlink");
+// create.symlik("/test","arduino-bounce2");
