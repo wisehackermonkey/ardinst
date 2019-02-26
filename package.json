@@ -11,9 +11,14 @@
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10",
+    "should": "^13.2.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo 'Running mocha tests' && node ./node_modules/mocha/bin/mocha",
+    "test-nodemon": "echo 'Running mocha tests' && node ./node_modules/nodemon/bin/nodemon.js --exec node ./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
