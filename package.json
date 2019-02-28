@@ -6,8 +6,12 @@
     "global-prefix": "^3.0.0",
     "mkdirp": "latest"
   },
+  "bin": {
+    "ardinst": "./bin/ardinst.js"
+  },
+  "preferGlobal": true,
   "description": "```\r by oran c\r oranbusiness@gmail.com\r github.com/wisehackermonkey\r 20190224\r ```",
-  "main": "ardinst.js",
+  "main": "bin/ardinst.js",
   "directories": {
     "lib": "lib"
   },
