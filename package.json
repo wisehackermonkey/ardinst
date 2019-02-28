@@ -21,7 +21,8 @@
     "should": "^13.2.3"
   },
   "scripts": {
-    "test": "echo 'Running mocha tests' && node ./node_modules/mocha/bin/mocha",
+    "test": "mocha",
+    "test-local": "echo 'Running mocha tests' && node ./node_modules/mocha/bin/mocha",
     "test-nodemon": "echo 'Running mocha tests' && node ./node_modules/nodemon/bin/nodemon.js --exec node ./node_modules/mocha/bin/mocha"
   },
   "repository": {
