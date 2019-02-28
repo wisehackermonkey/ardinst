@@ -1,6 +1,6 @@
 {
   "name": "ardinst",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "dependencies": {
     "commander": "^2.19.0",
     "global-prefix": "^3.0.0",
