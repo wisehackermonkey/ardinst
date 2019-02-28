@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 /*
  Ardinst is a package manager for ardiuno libraries
  DESCRIPTION
