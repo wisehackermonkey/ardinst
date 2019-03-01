@@ -1,10 +1,9 @@
 /*
- uninstall packages by specifying package name
- 'ardinst uninstall <packagename>
+ update libraries from cli
  by Oran C
  oranbusiness@gmail.com
  github.com/wisehackermonkey
- 20190224
+ 20190301
 */
 const program = require('commander');
 const create = require("./lib/create");
@@ -21,13 +20,13 @@ if (!library.length) {
 
 console.log();
 
-library.forEach(function (package_name) {
-    console.log(`       uninstall : ${package_name}`);
+library.forEach(function (library_name) {
+    console.log(`       update : ${library_name}`);
     try {
-        create.uninstall(package_name);
+        console.log(create.update(library_name));
     }catch (e) {
-        console.log(`Package "${package_name}" in not installed`);
-        console.log(`did you mean? 'ardinst install ${package_name}`);
+        console.log(`Package "${library_name}" in not installed`);
+        console.log(`did you mean? 'ardinst update ${library_name}`);
         console.log(`ERROR: ${e}`);
     }
 });
