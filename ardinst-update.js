@@ -24,6 +24,7 @@ library.forEach(function (library_name) {
     console.log(`       update : ${library_name}`);
     try {
         console.log(create.update(library_name));
+        console.log(`Update to ${library_name} has been ran`);
     }catch (e) {
         console.log(`Package "${library_name}" in not installed`);
         console.log(`did you mean? 'ardinst update ${library_name}`);
