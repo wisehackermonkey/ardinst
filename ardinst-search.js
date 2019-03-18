@@ -7,4 +7,24 @@
  20190224
 */
 //TODO flesh out search function
-console.log(`--------------TODO--------------`);
+const program = require('commander');
+const create = require("./lib/create");
+
+
+program.parse(process.argv);
+
+let library = program.args;
+
+if (!library.length) {
+    console.error('package name required');
+    process.exit(1);
+}
+
+console.log();
+
+library.forEach(function (library_name) {
+    console.log(`       search : ${library_name}`);
+    console.log(create.search(library_name));
+    console.log(`search ${library_name} has been ran`);
+});
+console.log();
