@@ -32,6 +32,5 @@ program
     .command('generate [folder]', 'generate arduino library file project template')
     .command('update [library]', 'installs newest version of libraries')
     .command('list', 'lists the packages installed')
-    //TODO ADD 'ardinst list' returns list of installed packages
-    // .command('list', 'list packages installed', {isDefault: true})
+    .command('publish',"upload's arduino library to npm, with all necessary files")
     .parse(process.argv);

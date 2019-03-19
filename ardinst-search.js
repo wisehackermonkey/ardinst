@@ -23,8 +23,8 @@ if (!library.length) {
 console.log();
 
 library.forEach(function (library_name) {
-    console.log(`       search : ${library_name}`);
+    console.log(`       search : arduino-${library_name}`);
     console.log(create.search(library_name));
-    console.log(`search ${library_name} has been ran`);
+    console.log(`search arduino-${library_name} has been ran`);
 });
 console.log();
