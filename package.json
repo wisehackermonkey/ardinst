@@ -1,6 +1,6 @@
 {
   "name": "ardinst",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "dependencies": {
     "commander": "^2.19.0",
     "get-installed-path": "^4.0.8",
