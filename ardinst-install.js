@@ -32,10 +32,10 @@ pkgs.forEach(function (library) {
     console.log(`       install : ${library}`);
     let child = create.install(library);
     console.log(`After install`);
-    child.on('exit', () => {
+    // child.on('exit', () => {
         console.log(`install finished`);
         create.symlink(library);
         console.log(`symlink created`);
-    });
+    // });
 });
 console.log();
