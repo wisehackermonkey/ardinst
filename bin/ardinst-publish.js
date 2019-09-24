@@ -8,7 +8,7 @@
 */
 
 const program = require("commander");
-const create = require("./lib/create");
+const create = require("./create");
 const gitclone = require('gitclone');
 
 program.parse(process.argv);

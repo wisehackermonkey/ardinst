@@ -25,7 +25,7 @@ console.log(`
 console.log(`Ardinst (arduino install) the arduino package manager`);
 
 program
-    .version('1.2.0', '-v, --version')
+    .version('1.2.1', '-v, --version')
     .command('install [library]', 'install one or more packages')
     .command('uninstall [library]', 'remove packages by specifing package name, allows for multiple uninstalls at same time')
     .command('search [query]', 'search npm for arduino-* packages')

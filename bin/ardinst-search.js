@@ -8,7 +8,7 @@
 */
 //TODO flesh out search function
 const program = require('commander');
-const create = require("./lib/create");
+const create = require("./create");
 
 
 program.parse(process.argv);

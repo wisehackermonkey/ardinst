@@ -16,7 +16,7 @@ let folder = program.args;
 console.log();
 folder.forEach(function (library) {
     console.log(`       generate : ${library}`);
-    let create = require("./lib/create");
+    let create = require("./create");
 
     //Create project directory structure
     create.folder(`./${library}/src`);
