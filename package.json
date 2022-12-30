@@ -19,7 +19,7 @@
     "lib": "lib"
   },
   "devDependencies": {
-    "mocha": "^6.0.2",
+    "mocha": "^10.2.0",
     "nodemon": "^1.18.10",
     "should": "^13.2.3"
   },
